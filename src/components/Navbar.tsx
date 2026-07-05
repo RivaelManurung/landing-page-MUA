@@ -1,60 +1,88 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import Icon from "./ui/Icon";
 import styles from "./Navbar.module.css";
+import type { NavItem } from "@/lib/types";
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+interface NavbarProps {
+  siteName: string;
+  siteTagline: string;
+  navItems: NavItem[];
+  bookingHref: string;
+}
+
+export default function Navbar({
+  siteName,
+  siteTagline,
+  navItems,
+  bookingHref,
+}: NavbarProps) {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 8);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo}>
-          <span>AURELIA</span>
-          <span className={styles.logoAccent}>GLAM</span>
-        </Link>
+  const closeMenu = () => setIsMenuOpen(false);
 
-        <ul className={styles.navLinks}>
-          <li>
-            <Link href="#services" className={styles.navLink}>
-              Layanan
-            </Link>
-          </li>
-          <li>
-            <Link href="#portfolio" className={styles.navLink}>
-              Portofolio
-            </Link>
-          </li>
-          <li>
-            <Link href="#about" className={styles.navLink}>
-              Tentang
-            </Link>
-          </li>
-          <li>
-            <Link href="#testimonials" className={styles.navLink}>
-              Testimoni
-            </Link>
-          </li>
-        </ul>
+  return (
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+      <div className={`container ${styles.inner}`}>
+        <a href="#beranda" className={styles.brand} onClick={closeMenu}>
+          <span className={styles.brandMark} aria-hidden="true">
+            {siteName.charAt(0)}
+          </span>
+          <span className={styles.brandText}>
+            <strong>{siteName}</strong>
+            <small>{siteTagline}</small>
+          </span>
+        </a>
+
+        <nav
+          aria-label="Navigasi utama"
+          className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}
+        >
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href} onClick={closeMenu}>
+              {item.label}
+            </a>
+          ))}
+          <a
+            href={bookingHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`btn btn-dark ${styles.mobileCta}`}
+            onClick={closeMenu}
+          >
+            Book Now
+            <Icon name="arrowRight" size={16} />
+          </a>
+        </nav>
 
         <div className={styles.actions}>
-          <a href="#booking" className="btn btn-primary" style={{ padding: "0.7rem 1.5rem", fontSize: "0.9rem" }}>
-            Booking Sekarang
+          <a
+            href={bookingHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`btn btn-dark ${styles.desktopCta}`}
+          >
+            Book Now
+            <Icon name="arrowRight" size={16} />
           </a>
+          <button
+            type="button"
+            className={styles.menuToggle}
+            aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? "Tutup menu" : "Buka menu"}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <Icon name={isMenuOpen ? "close" : "menu"} size={24} />
+          </button>
         </div>
       </div>
     </header>

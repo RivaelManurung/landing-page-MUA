@@ -1,145 +1,106 @@
 .footer {
-  background: #060506;
-  border-top: 1px solid var(--glass-border);
-  padding: 5rem 0 2rem 0;
+  background: #0b0909;
+  padding-top: clamp(3rem, 6vw, 4.5rem);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  padding-bottom: 3rem;
 }
 
 .brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
-.desc {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.7;
-  max-width: 320px;
-  margin-bottom: 1.5rem;
-}
-
-.socials {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialIcon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  color: var(--text-primary);
-  font-size: 1.1rem;
-  transition: var(--transition);
+  gap: 0.7rem;
 }
 
-.socialIcon:hover {
-  background: var(--accent-gradient);
-  color: #000;
-  border-color: transparent;
-  transform: translateY(-3px);
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--accent);
 }
 
-.colTitle {
-  font-size: 1.1rem;
+.brand span:last-child {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brand small {
+  font-size: 0.58rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.description {
+  margin-top: 1.1rem;
+  font-size: var(--text-small);
+  color: var(--text-muted);
+  max-width: 30ch;
+}
+
+.footer h3 {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
   font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  margin-bottom: 1.1rem;
 }
 
-.linkList {
+.footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.65rem;
+  font-size: var(--text-small);
+  color: var(--text-muted);
 }
 
-.linkItem {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  transition: var(--transition);
+.footer ul a {
+  transition: color var(--duration-fast) ease;
 }
 
-.linkItem:hover {
-  color: var(--accent-gold);
-  transform: translateX(5px);
-  display: inline-block;
-}
-
-.newsletterDesc {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.newsletterForm {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.input {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--glass-border);
-  color: var(--text-primary);
-  font-size: 0.85rem;
-}
-
-.input:focus {
-  outline: none;
-  border-color: var(--accent-gold);
-}
-
-.subBtn {
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-full);
-  background: var(--accent-gradient);
-  color: #000;
-  font-weight: 600;
-  font-size: 0.85rem;
+.footer ul a:hover,
+.footer ul a:focus-visible {
+  color: var(--accent-soft);
 }
 
 .bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+  padding-block: 1.25rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
+  text-align: center;
 }
 
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 540px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  .bottom {
-    flex-direction: column;
-    text-align: center;
   }
 }

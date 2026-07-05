@@ -1,0 +1,234 @@
+{
+  "site": {
+    "name": "Lunée",
+    "tagline": "Makeup Artist",
+    "description": "Sentuhan makeup profesional untuk setiap momen spesialmu. Makeup yang menonjolkan kecantikan alami versi terbaik dirimu.",
+    "url": "https://lunee.mua",
+    "location": "Jakarta, Indonesia",
+    "whatsapp": "6281234567890",
+    "email": "hello@lunee.mua",
+    "phone": "0812-3456-7890",
+    "socials": [
+      { "label": "Instagram", "href": "https://instagram.com/lunee.mua" },
+      { "label": "TikTok", "href": "https://tiktok.com/@lunee.mua" },
+      { "label": "YouTube", "href": "https://youtube.com/@lunee.mua" }
+    ]
+  },
+  "nav": [
+    { "label": "Beranda", "href": "#beranda" },
+    { "label": "Layanan", "href": "#layanan" },
+    { "label": "Paket", "href": "#paket" },
+    { "label": "Portfolio", "href": "#portfolio" },
+    { "label": "Tentang", "href": "#tentang" },
+    { "label": "Testimoni", "href": "#testimoni" }
+  ],
+  "hero": {
+    "kicker": "Professional Makeup Artist",
+    "titleLines": ["Percaya Diri,", "Tampil Memukau"],
+    "highlight": "Tampil Memukau",
+    "description": "Sentuhan makeup profesional untuk setiap momen spesialmu. Makeup yang menonjolkan kecantikan alami versi terbaik dirimu.",
+    "primaryCta": { "label": "Lihat Paket", "href": "#paket" },
+    "secondaryCta": { "label": "Lihat Portfolio", "href": "#portfolio" },
+    "image": "/hero.jpg",
+    "features": [
+      {
+        "icon": "brush",
+        "title": "Hasil Flawless",
+        "description": "Riasan tahan lama dan natural"
+      },
+      {
+        "icon": "diamond",
+        "title": "Produk Premium",
+        "description": "Menggunakan produk berkualitas tinggi"
+      },
+      {
+        "icon": "calendar",
+        "title": "Booking Mudah",
+        "description": "Proses cepat dan fleksibel"
+      }
+    ]
+  },
+  "about": {
+    "kicker": "Tentang Saya",
+    "title": "MUA Profesional Untuk Momen Spesial Anda",
+    "highlight": "Momen Spesial",
+    "description": "Saya adalah Makeup Artist profesional dengan pengalaman bertahun-tahun di bidang makeup untuk berbagai acara seperti pernikahan, wisuda, photoshoot, dan event lainnya. Kepuasan klien adalah prioritas utama saya.",
+    "image": "/editorial.jpg",
+    "experienceYears": "5+",
+    "experienceLabel": "Tahun Pengalaman",
+    "cta": { "label": "Selengkapnya", "href": "#paket" },
+    "stats": [
+      { "icon": "user", "value": "200+", "label": "Klien Puas" },
+      { "icon": "star", "value": "100%", "label": "Produk Berkualitas" },
+      { "icon": "heart", "value": "5.0", "label": "Rating Kepuasan" }
+    ]
+  },
+  "services": {
+    "kicker": "Layanan",
+    "title": "Layanan Makeup Yang Saya Tawarkan",
+    "highlight": "Tawarkan",
+    "cta": { "label": "Lihat Semua Layanan", "href": "#paket" },
+    "items": [
+      {
+        "icon": "ring",
+        "title": "Wedding Makeup",
+        "description": "Riasan pengantin yang elegan dan tahan lama untuk hari bahagiamu.",
+        "startingPrice": "Mulai dari Rp 2.500.000"
+      },
+      {
+        "icon": "graduation",
+        "title": "Graduation Makeup",
+        "description": "Tampil cantik dan percaya diri di hari kelulusanmu.",
+        "startingPrice": "Mulai dari Rp 750.000"
+      },
+      {
+        "icon": "camera",
+        "title": "Photoshoot Makeup",
+        "description": "Riasan yang menonjolkan fitur wajah terbaik untuk hasil foto maksimal.",
+        "startingPrice": "Mulai dari Rp 800.000"
+      },
+      {
+        "icon": "sparkles",
+        "title": "Party / Event Makeup",
+        "description": "Makeup untuk berbagai acara spesial seperti party, tunangan, dll.",
+        "startingPrice": "Mulai dari Rp 650.000"
+      }
+    ]
+  },
+  "packages": {
+    "kicker": "Paket Makeup",
+    "title": "Pilih Paket Sesuai Kebutuhanmu",
+    "highlight": "Kebutuhanmu",
+    "description": "Semua paket sudah termasuk konsultasi gratis, produk premium, dan touch-up kit. Booking langsung via WhatsApp.",
+    "items": [
+      {
+        "id": "paket-a",
+        "name": "Paket A",
+        "subtitle": "Basic Glow",
+        "price": 650000,
+        "priceLabel": "Rp 650.000",
+        "unit": "per sesi",
+        "isFeatured": false,
+        "features": [
+          "Makeup natural / soft glam",
+          "Hairdo simple (tanpa aksesoris)",
+          "Bulu mata premium",
+          "Durasi pengerjaan ± 60 menit",
+          "Touch-up kit mini"
+        ],
+        "bestFor": "Cocok untuk party, lamaran, dan acara santai"
+      },
+      {
+        "id": "paket-b",
+        "name": "Paket B",
+        "subtitle": "Signature Look",
+        "price": 1200000,
+        "priceLabel": "Rp 1.200.000",
+        "unit": "per sesi",
+        "isFeatured": true,
+        "badge": "Paling Populer",
+        "features": [
+          "Makeup full glam / bold",
+          "Hairdo + aksesoris rambut",
+          "Bulu mata premium atas & bawah",
+          "Softlens (opsional)",
+          "Durasi pengerjaan ± 90 menit",
+          "Touch-up 1x di lokasi",
+          "Free konsultasi look H-3"
+        ],
+        "bestFor": "Cocok untuk wisuda, prewedding, dan photoshoot"
+      },
+      {
+        "id": "paket-c",
+        "name": "Paket C",
+        "subtitle": "Royal Bridal",
+        "price": 2500000,
+        "priceLabel": "Rp 2.500.000",
+        "unit": "per acara",
+        "isFeatured": false,
+        "features": [
+          "Makeup pengantin (akad & resepsi)",
+          "Hairdo / hijab styling lengkap",
+          "Makeup retouch sepanjang acara",
+          "Bulu mata & softlens premium",
+          "Makeup 2 anggota keluarga",
+          "Trial makeup 1x sebelum hari H",
+          "Standby MUA hingga acara selesai"
+        ],
+        "bestFor": "Cocok untuk akad, resepsi, dan intimate wedding"
+      }
+    ],
+    "custom": {
+      "id": "paket-custom",
+      "name": "Paket Custom",
+      "subtitle": "Sesuai Kebutuhanmu",
+      "description": "Punya kebutuhan khusus? Group makeup, acara di luar kota, atau kombinasi layanan? Ceritakan kebutuhanmu dan dapatkan penawaran khusus.",
+      "features": [
+        "Fleksibel sesuai budget & kebutuhan",
+        "Group / rombongan (bridesmaid, keluarga)",
+        "Tersedia untuk luar kota",
+        "Penawaran harga transparan"
+      ],
+      "eventTypes": [
+        "Wedding",
+        "Wisuda",
+        "Photoshoot",
+        "Party / Event",
+        "Group Makeup",
+        "Lainnya"
+      ]
+    }
+  },
+  "portfolio": {
+    "kicker": "Portfolio",
+    "title": "Hasil Karya Terbaru",
+    "cta": { "label": "Lihat Semua Portfolio", "href": "#portfolio" },
+    "items": [
+      { "image": "/bridal.jpg", "alt": "Makeup pengantin dengan veil putih", "category": "Wedding" },
+      { "image": "/editorial.jpg", "alt": "Makeup editorial soft glam", "category": "Photoshoot" },
+      { "image": "/hero.jpg", "alt": "Makeup natural glow untuk acara formal", "category": "Party" },
+      { "image": "/bridal.jpg", "alt": "Riasan akad nikah elegan", "category": "Wedding" },
+      { "image": "/editorial.jpg", "alt": "Makeup wisuda natural", "category": "Graduation" },
+      { "image": "/hero.jpg", "alt": "Soft glam untuk photoshoot studio", "category": "Photoshoot" }
+    ]
+  },
+  "testimonials": {
+    "kicker": "Testimoni",
+    "title": "Apa Kata Klien Saya",
+    "items": [
+      {
+        "quote": "Makeup-nya flawless banget, hasilnya tahan lama dari pagi sampai malam. Terima kasih sudah bikin hari spesialku semakin sempurna!",
+        "name": "Anna L.",
+        "role": "Bride"
+      },
+      {
+        "quote": "Profesional, ramah, dan hasil makeup-nya sesuai banget sama yang aku mau. Highly recommended!",
+        "name": "Dewi M.",
+        "role": "Graduation"
+      },
+      {
+        "quote": "Makeup untuk photoshoot hasilnya bagus banget di kamera. Next time pasti booking lagi!",
+        "name": "Cindy P.",
+        "role": "Content Creator"
+      },
+      {
+        "quote": "Sempat ragu karena baru pertama pakai jasa MUA, ternyata hasilnya jauh melebihi ekspektasi. Natural tapi tetap memukau.",
+        "name": "Rara S.",
+        "role": "Engagement"
+      }
+    ]
+  },
+  "cta": {
+    "titleLines": ["Siap Tampil Cantik", "Untuk Momen Spesialmu?"],
+    "highlight": "Momen Spesialmu?",
+    "description": "Yuk booking sekarang dan konsultasikan kebutuhan makeup-mu!",
+    "buttonLabel": "Booking via WhatsApp"
+  },
+  "footer": {
+    "description": "Membantu kamu tampil percaya diri dan memukau di setiap momen spesial.",
+    "menuTitle": "Menu",
+    "contactTitle": "Hubungi Saya",
+    "followTitle": "Follow Me",
+    "copyright": "Lunée Makeup Artist. All Rights Reserved."
+  }
+}

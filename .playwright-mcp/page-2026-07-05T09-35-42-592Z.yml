@@ -1,0 +1,410 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Lunée Makeup Artist" [ref=e4] [cursor=pointer]:
+        - /url: "#beranda"
+        - generic [ref=e5]: L
+        - generic [ref=e6]:
+          - strong [ref=e7]: Lunée
+          - generic [ref=e8]: Makeup Artist
+      - navigation "Navigasi utama" [ref=e9]:
+        - link "Beranda" [ref=e10] [cursor=pointer]:
+          - /url: "#beranda"
+        - link "Layanan" [ref=e11] [cursor=pointer]:
+          - /url: "#layanan"
+        - link "Paket" [ref=e12] [cursor=pointer]:
+          - /url: "#paket"
+        - link "Portfolio" [ref=e13] [cursor=pointer]:
+          - /url: "#portfolio"
+        - link "Tentang" [ref=e14] [cursor=pointer]:
+          - /url: "#tentang"
+        - link "Testimoni" [ref=e15] [cursor=pointer]:
+          - /url: "#testimoni"
+      - link "Book Now" [ref=e17] [cursor=pointer]:
+        - /url: https://wa.me/6281234567890?text=Halo%20Lun%C3%A9e!%20Saya%20ingin%20konsultasi%20kebutuhan%20makeup%20untuk%20acara%20saya.%20Boleh%20minta%20info%20paket%20dan%20ketersediaan%20jadwalnya%3F
+        - text: Book Now
+        - img [ref=e18]
+  - main [ref=e20]:
+    - region "Percaya Diri, Tampil Memukau" [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: Professional Makeup Artist
+          - heading "Percaya Diri, Tampil Memukau" [level=1] [ref=e25]:
+            - generic [ref=e26]: Percaya Diri,
+            - generic [ref=e27]: Tampil Memukau
+          - paragraph [ref=e28]: Sentuhan makeup profesional untuk setiap momen spesialmu. Makeup yang menonjolkan kecantikan alami versi terbaik dirimu.
+          - generic [ref=e29]:
+            - link "Lihat Paket" [ref=e30] [cursor=pointer]:
+              - /url: "#paket"
+              - text: Lihat Paket
+              - img [ref=e31]
+            - link "Lihat Portfolio" [ref=e33] [cursor=pointer]:
+              - /url: "#portfolio"
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - img [ref=e37]
+              - heading "Hasil Flawless" [level=3] [ref=e40]
+              - paragraph [ref=e41]: Riasan tahan lama dan natural
+            - listitem [ref=e42]:
+              - img [ref=e44]
+              - heading "Produk Premium" [level=3] [ref=e47]
+              - paragraph [ref=e48]: Menggunakan produk berkualitas tinggi
+            - listitem [ref=e49]:
+              - img [ref=e51]
+              - heading "Booking Mudah" [level=3] [ref=e54]
+              - paragraph [ref=e55]: Proses cepat dan fleksibel
+        - generic [ref=e56]:
+          - img "Hasil makeup profesional oleh Lunée" [ref=e58]
+          - generic [ref=e59]: ✦
+          - generic [ref=e60]: ✦
+    - region "MUA Profesional Untuk Momen Spesial Anda" [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - img "Lunée sedang merias klien" [ref=e65]
+          - generic [ref=e66]:
+            - strong [ref=e67]: 5+
+            - generic [ref=e68]: Tahun Pengalaman
+        - generic [ref=e69]:
+          - generic [ref=e70]: Tentang Saya
+          - heading "MUA Profesional Untuk Momen Spesial Anda" [level=2] [ref=e71]
+          - paragraph [ref=e72]: Saya adalah Makeup Artist profesional dengan pengalaman bertahun-tahun di bidang makeup untuk berbagai acara seperti pernikahan, wisuda, photoshoot, dan event lainnya. Kepuasan klien adalah prioritas utama saya.
+          - paragraph [ref=e73]: Lunée
+          - link "Selengkapnya" [ref=e74] [cursor=pointer]:
+            - /url: "#paket"
+            - text: Selengkapnya
+            - img [ref=e75]
+        - list [ref=e77]:
+          - listitem [ref=e78]:
+            - img [ref=e80]
+            - generic [ref=e83]:
+              - strong [ref=e84]: 200+
+              - paragraph [ref=e85]: Klien Puas
+          - listitem [ref=e86]:
+            - img [ref=e88]
+            - generic [ref=e90]:
+              - strong [ref=e91]: 100%
+              - paragraph [ref=e92]: Produk Berkualitas
+          - listitem [ref=e93]:
+            - img [ref=e95]
+            - generic [ref=e97]:
+              - strong [ref=e98]: "5.0"
+              - paragraph [ref=e99]: Rating Kepuasan
+    - region "Layanan Makeup Yang Saya Tawarkan" [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: Layanan
+            - heading "Layanan Makeup Yang Saya Tawarkan" [level=2] [ref=e105]
+          - link "Lihat Semua Layanan" [ref=e106] [cursor=pointer]:
+            - /url: "#paket"
+            - text: Lihat Semua Layanan
+            - img [ref=e107]
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - img [ref=e112]
+            - heading "Wedding Makeup" [level=3] [ref=e115]
+            - paragraph [ref=e116]: Riasan pengantin yang elegan dan tahan lama untuk hari bahagiamu.
+            - strong [ref=e117]: Mulai dari Rp 2.500.000
+          - listitem [ref=e118]:
+            - img [ref=e120]
+            - heading "Graduation Makeup" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Tampil cantik dan percaya diri di hari kelulusanmu.
+            - strong [ref=e125]: Mulai dari Rp 750.000
+          - listitem [ref=e126]:
+            - img [ref=e128]
+            - heading "Photoshoot Makeup" [level=3] [ref=e131]
+            - paragraph [ref=e132]: Riasan yang menonjolkan fitur wajah terbaik untuk hasil foto maksimal.
+            - strong [ref=e133]: Mulai dari Rp 800.000
+          - listitem [ref=e134]:
+            - img [ref=e136]
+            - heading "Party / Event Makeup" [level=3] [ref=e139]
+            - paragraph [ref=e140]: Makeup untuk berbagai acara spesial seperti party, tunangan, dll.
+            - strong [ref=e141]: Mulai dari Rp 650.000
+    - region "Pilih Paket Sesuai Kebutuhanmu" [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: Paket Makeup
+          - heading "Pilih Paket Sesuai Kebutuhanmu" [level=2] [ref=e146]
+          - paragraph [ref=e147]: Semua paket sudah termasuk konsultasi gratis, produk premium, dan touch-up kit. Booking langsung via WhatsApp.
+        - list [ref=e148]:
+          - listitem [ref=e149]:
+            - generic [ref=e150]:
+              - heading "Paket A" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Basic Glow
+              - paragraph [ref=e153]:
+                - strong [ref=e154]: Rp 650.000
+                - generic [ref=e155]: / per sesi
+            - list [ref=e156]:
+              - listitem [ref=e157]:
+                - img [ref=e158]
+                - generic [ref=e160]: Makeup natural / soft glam
+              - listitem [ref=e161]:
+                - img [ref=e162]
+                - generic [ref=e164]: Hairdo simple (tanpa aksesoris)
+              - listitem [ref=e165]:
+                - img [ref=e166]
+                - generic [ref=e168]: Bulu mata premium
+              - listitem [ref=e169]:
+                - img [ref=e170]
+                - generic [ref=e172]: Durasi pengerjaan ± 60 menit
+              - listitem [ref=e173]:
+                - img [ref=e174]
+                - generic [ref=e176]: Touch-up kit mini
+            - paragraph [ref=e177]: Cocok untuk party, lamaran, dan acara santai
+            - link "Booking via WhatsApp" [ref=e178] [cursor=pointer]:
+              - /url: https://wa.me/6281234567890?text=Halo%20Lun%C3%A9e!%20Saya%20ingin%20booking%20*Paket%20A*%20(Rp%20650.000).%0A%0ANama%3A%20%0ATanggal%20acara%3A%20%0ALokasi%3A%20%0A%0AMohon%20info%20ketersediaannya%20ya%2C%20terima%20kasih!
+              - img [ref=e179]
+              - text: Booking via WhatsApp
+          - listitem [ref=e182]:
+            - generic [ref=e183]: Paling Populer
+            - generic [ref=e184]:
+              - heading "Paket B" [level=3] [ref=e185]
+              - paragraph [ref=e186]: Signature Look
+              - paragraph [ref=e187]:
+                - strong [ref=e188]: Rp 1.200.000
+                - generic [ref=e189]: / per sesi
+            - list [ref=e190]:
+              - listitem [ref=e191]:
+                - img [ref=e192]
+                - generic [ref=e194]: Makeup full glam / bold
+              - listitem [ref=e195]:
+                - img [ref=e196]
+                - generic [ref=e198]: Hairdo + aksesoris rambut
+              - listitem [ref=e199]:
+                - img [ref=e200]
+                - generic [ref=e202]: Bulu mata premium atas & bawah
+              - listitem [ref=e203]:
+                - img [ref=e204]
+                - generic [ref=e206]: Softlens (opsional)
+              - listitem [ref=e207]:
+                - img [ref=e208]
+                - generic [ref=e210]: Durasi pengerjaan ± 90 menit
+              - listitem [ref=e211]:
+                - img [ref=e212]
+                - generic [ref=e214]: Touch-up 1x di lokasi
+              - listitem [ref=e215]:
+                - img [ref=e216]
+                - generic [ref=e218]: Free konsultasi look H-3
+            - paragraph [ref=e219]: Cocok untuk wisuda, prewedding, dan photoshoot
+            - link "Booking via WhatsApp" [ref=e220] [cursor=pointer]:
+              - /url: https://wa.me/6281234567890?text=Halo%20Lun%C3%A9e!%20Saya%20ingin%20booking%20*Paket%20B*%20(Rp%201.200.000).%0A%0ANama%3A%20%0ATanggal%20acara%3A%20%0ALokasi%3A%20%0A%0AMohon%20info%20ketersediaannya%20ya%2C%20terima%20kasih!
+              - img [ref=e221]
+              - text: Booking via WhatsApp
+          - listitem [ref=e224]:
+            - generic [ref=e225]:
+              - heading "Paket C" [level=3] [ref=e226]
+              - paragraph [ref=e227]: Royal Bridal
+              - paragraph [ref=e228]:
+                - strong [ref=e229]: Rp 2.500.000
+                - generic [ref=e230]: / per acara
+            - list [ref=e231]:
+              - listitem [ref=e232]:
+                - img [ref=e233]
+                - generic [ref=e235]: Makeup pengantin (akad & resepsi)
+              - listitem [ref=e236]:
+                - img [ref=e237]
+                - generic [ref=e239]: Hairdo / hijab styling lengkap
+              - listitem [ref=e240]:
+                - img [ref=e241]
+                - generic [ref=e243]: Makeup retouch sepanjang acara
+              - listitem [ref=e244]:
+                - img [ref=e245]
+                - generic [ref=e247]: Bulu mata & softlens premium
+              - listitem [ref=e248]:
+                - img [ref=e249]
+                - generic [ref=e251]: Makeup 2 anggota keluarga
+              - listitem [ref=e252]:
+                - img [ref=e253]
+                - generic [ref=e255]: Trial makeup 1x sebelum hari H
+              - listitem [ref=e256]:
+                - img [ref=e257]
+                - generic [ref=e259]: Standby MUA hingga acara selesai
+            - paragraph [ref=e260]: Cocok untuk akad, resepsi, dan intimate wedding
+            - link "Booking via WhatsApp" [ref=e261] [cursor=pointer]:
+              - /url: https://wa.me/6281234567890?text=Halo%20Lun%C3%A9e!%20Saya%20ingin%20booking%20*Paket%20C*%20(Rp%202.500.000).%0A%0ANama%3A%20%0ATanggal%20acara%3A%20%0ALokasi%3A%20%0A%0AMohon%20info%20ketersediaannya%20ya%2C%20terima%20kasih!
+              - img [ref=e262]
+              - text: Booking via WhatsApp
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - generic [ref=e267]: Sesuai Kebutuhanmu
+            - heading "Paket Custom" [level=3] [ref=e268]
+            - paragraph [ref=e269]: Punya kebutuhan khusus? Group makeup, acara di luar kota, atau kombinasi layanan? Ceritakan kebutuhanmu dan dapatkan penawaran khusus.
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - img [ref=e272]
+                - generic [ref=e274]: Fleksibel sesuai budget & kebutuhan
+              - listitem [ref=e275]:
+                - img [ref=e276]
+                - generic [ref=e278]: Group / rombongan (bridesmaid, keluarga)
+              - listitem [ref=e279]:
+                - img [ref=e280]
+                - generic [ref=e282]: Tersedia untuk luar kota
+              - listitem [ref=e283]:
+                - img [ref=e284]
+                - generic [ref=e286]: Penawaran harga transparan
+          - generic [ref=e287]:
+            - generic [ref=e288]:
+              - generic [ref=e289]:
+                - generic [ref=e290]: Nama
+                - textbox "Nama" [ref=e291]:
+                  - /placeholder: Nama kamu
+              - generic [ref=e292]:
+                - generic [ref=e293]: Jenis Acara
+                - combobox "Jenis Acara" [ref=e294]:
+                  - option "Wedding" [selected]
+                  - option "Wisuda"
+                  - option "Photoshoot"
+                  - option "Party / Event"
+                  - option "Group Makeup"
+                  - option "Lainnya"
+            - generic [ref=e295]:
+              - generic [ref=e296]:
+                - generic [ref=e297]: Tanggal Acara
+                - textbox "Tanggal Acara" [ref=e298]
+              - generic [ref=e299]:
+                - generic [ref=e300]: Lokasi
+                - textbox "Lokasi" [ref=e301]:
+                  - /placeholder: Kota / alamat acara
+            - generic [ref=e302]:
+              - generic [ref=e303]: Kebutuhan Khusus (opsional)
+              - textbox "Kebutuhan Khusus (opsional)" [ref=e304]:
+                - /placeholder: "Contoh: makeup untuk 5 bridesmaid + 2 ibu, acara di luar kota"
+            - button "Konsultasi via WhatsApp" [ref=e305] [cursor=pointer]:
+              - img [ref=e306]
+              - text: Konsultasi via WhatsApp
+            - paragraph [ref=e309]: Form ini akan membuka WhatsApp dengan pesan yang sudah terisi otomatis.
+    - region "Hasil Karya Terbaru" [ref=e310]:
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - generic [ref=e314]: Portfolio
+          - heading "Hasil Karya Terbaru" [level=2] [ref=e315]
+        - link "Lihat Semua Portfolio" [ref=e316] [cursor=pointer]:
+          - /url: "#portfolio"
+          - text: Lihat Semua Portfolio
+          - img [ref=e317]
+      - list "Galeri hasil makeup" [ref=e320]:
+        - listitem [ref=e321]:
+          - img "Makeup pengantin dengan veil putih" [ref=e322]
+          - generic [ref=e323]: Wedding
+        - listitem [ref=e324]:
+          - img "Makeup editorial soft glam" [ref=e325]
+          - generic [ref=e326]: Photoshoot
+        - listitem [ref=e327]:
+          - img "Makeup natural glow untuk acara formal" [ref=e328]
+          - generic [ref=e329]: Party
+        - listitem [ref=e330]:
+          - img "Riasan akad nikah elegan" [ref=e331]
+          - generic [ref=e332]: Wedding
+        - listitem [ref=e333]:
+          - img "Makeup wisuda natural" [ref=e334]
+          - generic [ref=e335]: Graduation
+        - listitem [ref=e336]:
+          - img "Soft glam untuk photoshoot studio" [ref=e337]
+          - generic [ref=e338]: Photoshoot
+    - region "Apa Kata Klien Saya" [ref=e339]:
+      - generic [ref=e340]:
+        - generic [ref=e341]:
+          - generic [ref=e342]: Testimoni
+          - heading "Apa Kata Klien Saya" [level=2] [ref=e343]
+        - list [ref=e344]:
+          - listitem [ref=e345]:
+            - generic [ref=e346]: “
+            - blockquote [ref=e347]:
+              - paragraph [ref=e348]: Makeup-nya flawless banget, hasilnya tahan lama dari pagi sampai malam. Terima kasih sudah bikin hari spesialku semakin sempurna!
+            - generic [ref=e349]:
+              - generic [ref=e350]: AL
+              - generic [ref=e351]:
+                - strong [ref=e352]: Anna L.
+                - paragraph [ref=e353]: Bride
+          - listitem [ref=e354]:
+            - generic [ref=e355]: “
+            - blockquote [ref=e356]:
+              - paragraph [ref=e357]: Profesional, ramah, dan hasil makeup-nya sesuai banget sama yang aku mau. Highly recommended!
+            - generic [ref=e358]:
+              - generic [ref=e359]: DM
+              - generic [ref=e360]:
+                - strong [ref=e361]: Dewi M.
+                - paragraph [ref=e362]: Graduation
+          - listitem [ref=e363]:
+            - generic [ref=e364]: “
+            - blockquote [ref=e365]:
+              - paragraph [ref=e366]: Makeup untuk photoshoot hasilnya bagus banget di kamera. Next time pasti booking lagi!
+            - generic [ref=e367]:
+              - generic [ref=e368]: CP
+              - generic [ref=e369]:
+                - strong [ref=e370]: Cindy P.
+                - paragraph [ref=e371]: Content Creator
+          - listitem [ref=e372]:
+            - generic [ref=e373]: “
+            - blockquote [ref=e374]:
+              - paragraph [ref=e375]: Sempat ragu karena baru pertama pakai jasa MUA, ternyata hasilnya jauh melebihi ekspektasi. Natural tapi tetap memukau.
+            - generic [ref=e376]:
+              - generic [ref=e377]: RS
+              - generic [ref=e378]:
+                - strong [ref=e379]: Rara S.
+                - paragraph [ref=e380]: Engagement
+    - region "Siap Tampil Cantik Untuk Momen Spesialmu?" [ref=e381]:
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - heading "Siap Tampil Cantik Untuk Momen Spesialmu?" [level=2] [ref=e384]:
+            - generic [ref=e385]: Siap Tampil Cantik
+            - generic [ref=e386]: Untuk Momen Spesialmu?
+          - paragraph [ref=e387]: Yuk booking sekarang dan konsultasikan kebutuhan makeup-mu!
+        - link "Booking via WhatsApp" [ref=e388] [cursor=pointer]:
+          - /url: https://wa.me/6281234567890?text=Halo%20Lun%C3%A9e!%20Saya%20ingin%20konsultasi%20kebutuhan%20makeup%20untuk%20acara%20saya.%20Boleh%20minta%20info%20paket%20dan%20ketersediaan%20jadwalnya%3F
+          - img [ref=e389]
+          - text: Booking via WhatsApp
+  - contentinfo [ref=e392]:
+    - generic [ref=e393]:
+      - generic [ref=e394]:
+        - paragraph [ref=e395]:
+          - generic [ref=e396]: L
+          - generic [ref=e397]:
+            - strong [ref=e398]: Lunée
+            - generic [ref=e399]: Makeup Artist
+        - paragraph [ref=e400]: Membantu kamu tampil percaya diri dan memukau di setiap momen spesial.
+      - navigation "Menu footer" [ref=e401]:
+        - heading "Menu" [level=3] [ref=e402]
+        - list [ref=e403]:
+          - listitem [ref=e404]:
+            - link "Beranda" [ref=e405] [cursor=pointer]:
+              - /url: "#beranda"
+          - listitem [ref=e406]:
+            - link "Layanan" [ref=e407] [cursor=pointer]:
+              - /url: "#layanan"
+          - listitem [ref=e408]:
+            - link "Paket" [ref=e409] [cursor=pointer]:
+              - /url: "#paket"
+          - listitem [ref=e410]:
+            - link "Portfolio" [ref=e411] [cursor=pointer]:
+              - /url: "#portfolio"
+          - listitem [ref=e412]:
+            - link "Tentang" [ref=e413] [cursor=pointer]:
+              - /url: "#tentang"
+          - listitem [ref=e414]:
+            - link "Testimoni" [ref=e415] [cursor=pointer]:
+              - /url: "#testimoni"
+      - generic [ref=e416]:
+        - heading "Hubungi Saya" [level=3] [ref=e417]
+        - list [ref=e418]:
+          - listitem [ref=e419]:
+            - link "0812-3456-7890" [ref=e420] [cursor=pointer]:
+              - /url: tel:081234567890
+          - listitem [ref=e421]:
+            - link "hello@lunee.mua" [ref=e422] [cursor=pointer]:
+              - /url: mailto:hello@lunee.mua
+          - listitem [ref=e423]: Jakarta, Indonesia
+      - generic [ref=e424]:
+        - heading "Follow Me" [level=3] [ref=e425]
+        - list [ref=e426]:
+          - listitem [ref=e427]:
+            - link "Instagram" [ref=e428] [cursor=pointer]:
+              - /url: https://instagram.com/lunee.mua
+          - listitem [ref=e429]:
+            - link "TikTok" [ref=e430] [cursor=pointer]:
+              - /url: https://tiktok.com/@lunee.mua
+          - listitem [ref=e431]:
+            - link "YouTube" [ref=e432] [cursor=pointer]:
+              - /url: https://youtube.com/@lunee.mua
+    - paragraph [ref=e435]: © 2026 Lunée Makeup Artist. All Rights Reserved.
+  - alert [ref=e436]

@@ -1,87 +1,53 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
+import Icon from "./ui/Icon";
 import styles from "./Portfolio.module.css";
+import type { PortfolioContent } from "@/lib/types";
 
-const portfolioItems = [
-  {
-    id: 1,
-    title: "Eleganza Bridal Dewy Look",
-    category: "Bridal",
-    desc: "Soft pink undertone, glowing glass skin & timeless bun hairstyle for Holy Matrimony.",
-    image: "/bridal.jpg",
-    tag: "Wedding Day",
-  },
-  {
-    id: 2,
-    title: "Vogue Editorial Emerald Gaze",
-    category: "Editorial",
-    desc: "Bold graphic eye makeup with luxury Dior shadow & sculpted glass cheekbones.",
-    image: "/editorial.jpg",
-    tag: "High Fashion",
-  },
-  {
-    id: 3,
-    title: "Golden Hour Luxury Session",
-    category: "Bridal",
-    desc: "Behind the scenes professional studio styling with warm champagne gold lighting.",
-    image: "/hero.jpg",
-    tag: "Studio Session",
-  },
-];
+interface PortfolioProps {
+  portfolio: PortfolioContent;
+}
 
-export default function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filteredItems =
-    activeFilter === "All"
-      ? portfolioItems
-      : portfolioItems.filter((item) => item.category === activeFilter);
-
+export default function Portfolio({ portfolio }: PortfolioProps) {
   return (
-    <section id="portfolio" className="section" style={{ background: "rgba(20, 16, 20, 0.4)" }}>
+    <section
+      id="portfolio"
+      className={styles.portfolio}
+      aria-labelledby="portfolio-heading"
+    >
       <div className="container">
-        <div className={styles.header}>
-          <span className="subtitle">MAHA KARYA KAMI</span>
-          <h2 className={styles.title}>
-            Portofolio <span className="text-gradient">Riasan Mempesona</span>
-          </h2>
-          <p style={{ color: "var(--text-secondary)" }}>
-            Setiap riasan adalah karya seni yang disesuaikan secara unik dengan karakter kepribadian dan struktur wajah klien kami.
-          </p>
+        <div className="section-head" data-reveal>
+          <div>
+            <span className="kicker">{portfolio.kicker}</span>
+            <h2 id="portfolio-heading">{portfolio.title}</h2>
+          </div>
+          <a href={portfolio.cta.href} className="btn btn-outline">
+            {portfolio.cta.label}
+            <Icon name="arrowRight" size={16} />
+          </a>
         </div>
+      </div>
 
-        <div className={styles.filterTabs}>
-          {["All", "Bridal", "Editorial"].map((tab) => (
-            <button
-              key={tab}
-              className={`${styles.tabBtn} ${activeFilter === tab ? styles.activeTab : ""}`}
-              onClick={() => setActiveFilter(tab)}
-            >
-              {tab === "All" ? "Semua Karya" : tab}
-            </button>
-          ))}
-        </div>
-
-        <div className={styles.galleryGrid}>
-          {filteredItems.map((item) => (
-            <div key={item.id} className={styles.galleryItem}>
+      <div className={styles.trackWrapper}>
+        <ul
+          className={styles.track}
+          aria-label="Galeri hasil makeup"
+          data-reveal-group
+        >
+          {portfolio.items.map((item, index) => (
+            <li key={`${item.image}-${index}`} className={styles.item}>
               <Image
                 src={item.image}
-                alt={item.title}
-                width={500}
-                height={625}
+                alt={item.alt}
+                width={360}
+                height={460}
+                loading="lazy"
+                sizes="(max-width: 640px) 70vw, 300px"
                 className={styles.image}
               />
-              <div className={styles.overlay}>
-                <span className={styles.tag}>{item.tag}</span>
-                <h3 className={styles.itemTitle}>{item.title}</h3>
-                <p className={styles.itemDesc}>{item.desc}</p>
-              </div>
-            </div>
+              <span className={styles.category}>{item.category}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

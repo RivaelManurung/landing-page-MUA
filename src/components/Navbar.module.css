@@ -1,93 +1,166 @@
 .header {
   position: fixed;
+  inset-inline: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  transition: var(--transition);
-  padding: 1.5rem 0;
+  z-index: 50;
+  background: transparent;
+  transition:
+    background-color var(--duration-normal) ease,
+    box-shadow var(--duration-normal) ease;
 }
 
 .scrolled {
-  background: rgba(10, 8, 10, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--glass-border);
-  padding: 1rem 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: rgba(16, 13, 14, 0.82);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 var(--line);
 }
 
-.navContainer {
+.inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
+  height: 4.75rem;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  display: flex;
+.brand {
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
-.logoAccent {
-  color: var(--accent-gold);
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--accent);
 }
 
-.navLinks {
+.brandText {
   display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  list-style: none;
+  flex-direction: column;
+  line-height: 1.15;
 }
 
-.navLink {
-  color: var(--text-secondary);
+.brandText strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
   font-weight: 500;
-  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brandText small {
+  font-size: 0.6rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.4vw, 2.2rem);
+}
+
+.nav a {
   position: relative;
-  padding: 0.5rem 0;
+  font-size: var(--text-small);
+  font-weight: 400;
+  color: var(--text);
+  padding-block: 0.35rem;
 }
 
-.navLink:hover {
-  color: var(--text-primary);
-}
-
-.navLink::after {
-  content: '';
+.nav a:not(.mobileCta)::after {
+  content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent-gradient);
-  transition: var(--transition);
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-normal) var(--ease-out-expo);
 }
 
-.navLink:hover::after {
-  width: 100%;
+.nav a:not(.mobileCta):hover::after,
+.nav a:not(.mobileCta):focus-visible::after {
+  transform: scaleX(1);
 }
 
 .actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
-.menuBtn {
+.menuToggle {
   display: none;
-  color: var(--text-primary);
-  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  padding: 0.4rem;
 }
 
-@media (max-width: 768px) {
-  .navLinks {
+.mobileCta {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    position: fixed;
+    inset: 4.75rem 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(16, 13, 14, 0.97);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    padding: 0.5rem var(--container-pad) 1.5rem;
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      transform var(--duration-normal) var(--ease-out-expo),
+      opacity var(--duration-normal) ease,
+      visibility 0s linear var(--duration-normal);
+  }
+
+  .navOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition:
+      transform var(--duration-normal) var(--ease-out-expo),
+      opacity var(--duration-normal) ease;
+  }
+
+  .nav a {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 1rem;
+  }
+
+  .desktopCta {
     display: none;
   }
-  .menuBtn {
-    display: block;
+
+  .mobileCta {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    border-bottom: none !important;
+  }
+
+  .menuToggle {
+    display: grid;
+    place-items: center;
   }
 }

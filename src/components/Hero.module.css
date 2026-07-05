@@ -1,171 +1,183 @@
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  position: relative;
+  padding-top: 4.75rem;
   overflow: hidden;
 }
 
-.heroGrid {
+.grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem;
+  grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  min-height: min(90vh, 860px);
+  padding-block: clamp(2rem, 4vw, 3rem);
 }
 
 .content {
-  z-index: 2;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  background: rgba(229, 193, 88, 0.1);
-  border: 1px solid rgba(229, 193, 88, 0.3);
-  border-radius: var(--radius-full);
-  color: var(--accent-gold);
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.05em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+  font-size: var(--text-hero);
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* overflow mask for GSAP line reveal */
+.lineMask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.lineMask > span {
+  display: block;
+  will-change: transform;
 }
 
 .description {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  max-width: 540px;
-  margin-bottom: 2.5rem;
-  line-height: 1.7;
+  margin-top: 1.5rem;
+  max-width: 46ch;
+  color: var(--text-muted);
+  font-size: 1.05rem;
 }
 
-.buttonGroup {
+.ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-bottom: 3.5rem;
+  gap: 0.9rem;
+  margin-top: 2.2rem;
 }
 
-.statsGrid {
+.features {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--glass-border);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  width: 100%;
 }
 
-.statItem h4 {
-  font-size: 2rem;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 0.25rem;
+.features h3 {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.7rem;
 }
 
-.statItem p {
-  font-size: 0.85rem;
+.features p {
+  font-size: 0.82rem;
   color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.55;
 }
 
-/* Image Visuals */
+.featureIcon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 12px;
+  background: var(--accent-faint);
+  border: 1px solid rgba(213, 169, 124, 0.25);
+  color: var(--accent);
+}
+
 .visual {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: end;
+  width: 100%;
+  max-width: 520px;
 }
 
-.imageContainer {
+.arch {
   position: relative;
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius-lg);
+  border-radius: 300px 300px 20px 20px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg), 0 0 50px rgba(229, 193, 88, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(213, 169, 124, 0.35);
+  padding: 0.7rem;
+  background: linear-gradient(180deg, rgba(213, 169, 124, 0.1), transparent 55%);
 }
 
-.heroImg {
+.arch > img {
+  border-radius: 292px 292px 14px 14px;
+}
+
+.image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  transition: transform 0.7s ease;
+  aspect-ratio: 4 / 5;
+  will-change: transform;
 }
 
-.imageContainer:hover .heroImg {
-  transform: scale(1.05);
-}
-
-.floatingCard1 {
+.sparkle {
   position: absolute;
-  top: 10%;
-  left: -20px;
-  background: rgba(20, 16, 20, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  z-index: 3;
+  color: var(--accent);
+  font-size: 1.4rem;
+  animation: twinkle 2.8s ease-in-out infinite;
 }
 
-.floatingCard2 {
-  position: absolute;
-  bottom: 8%;
-  right: -20px;
-  background: rgba(20, 16, 20, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  z-index: 3;
+.sparkleOne {
+  top: 8%;
+  left: -6%;
 }
 
-.cardTitle {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--text-primary);
+.sparkleTwo {
+  bottom: 14%;
+  right: -5%;
+  font-size: 1rem;
+  animation-delay: 1.2s;
 }
 
-.cardSub {
-  font-size: 0.75rem;
-  color: var(--accent-gold);
-}
-
-@media (max-width: 992px) {
-  .heroGrid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
   }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-block: 2.5rem 3.5rem;
+  }
+
   .visual {
     order: -1;
+    justify-self: center;
+    max-width: 420px;
   }
-  .floatingCard1 { left: 0; }
-  .floatingCard2 { right: 0; }
-}
 
-@media (max-width: 600px) {
-  .statsGrid {
-    grid-template-columns: repeat(2, 1fr);
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
-  .title {
-    font-size: 2.2rem;
+
+  .features li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.9rem;
+    align-items: center;
+  }
+
+  .featureIcon {
+    grid-row: 1 / 3;
+  }
+
+  .features h3 {
+    margin-top: 0;
   }
 }
